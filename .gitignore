@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+
+# Hardhat artifacts
+artifacts/
+cache/
+
+# Environment variables
+.env
+
+# Deployment info (optional, but recommended to ignore for production)
+deployment-info.json
+
+# Any other temporary files
+*.log
+*.tmp 

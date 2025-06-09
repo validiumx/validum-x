@@ -1,0 +1,41 @@
+{
+  "name": "validium-x-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for Validium-X Coin (VLDX)",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy_testnet.js --network world-testnet",
+    "deploy:mainnet": "hardhat run scripts/deploy_mainnet.js --network world-mainnet",
+    "verify": "hardhat verify",
+    "coverage": "hardhat coverage",
+    "clean": "hardhat clean"
+  },
+  "keywords": [
+    "validium-x",
+    "vldx",
+    "ethereum",
+    "worldchain",
+    "smart-contracts"
+  ],
+  "author": "Validium-X Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@openzeppelin/hardhat-upgrades": "^1.28.0",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "ethereum-waffle": "^4.0.10",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.24.2",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.2"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-verify": "^2.0.14",
+    "@openzeppelin/contracts": "^4.9.3",
+    "@uniswap/v3-periphery": "^1.4.4"
+  }
+}

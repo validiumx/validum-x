@@ -1,0 +1,47 @@
+export const presaleAbi = [
+  "function basePrice() view returns (uint256)",
+  "function priceIncrement() view returns (uint256)",
+  "function maxTokensForSale() view returns (uint256)",
+  "function maxRaise() view returns (uint256)",
+  "function tokensSold() view returns (uint256)",
+  "function wldRaised() view returns (uint256)",
+  "function wethRaised() view returns (uint256)",
+  "function presaleActive() view returns (bool)",
+  "function presaleFinalized() view returns (bool)",
+  "function wldUsdPrice() view returns (uint256)",
+  "function wethUsdPrice() view returns (uint256)",
+  "function getCurrentPrice() view returns (uint256)",
+  "function getFinalPrice() view returns (uint256)",
+  "function calculateTokenAmount(uint256 usdAmount) view returns (uint256)",
+  "function getPresaleProgress() view returns (uint256, uint256, uint256, uint256)",
+  "function purchaseWithWLD(uint256 wldAmount)",
+  "function purchaseWithWETH(uint256 wethAmount)",
+  "function updateOraclePrices(uint256 wldPrice, uint256 wethPrice)",
+  "function startPresale()",
+  "function endPresale()",
+  "function finalizePresale(address liquidityContract)",
+]
+
+export const erc20Abi = [
+  "function name() view returns (string)",
+  "function symbol() view returns (string)",
+  "function decimals() view returns (uint8)",
+  "function totalSupply() view returns (uint256)",
+  "function balanceOf(address owner) view returns (uint256)",
+  "function allowance(address owner, address spender) view returns (uint256)",
+  "function approve(address spender, uint256 value) returns (bool)",
+  "function transfer(address to, uint256 value) returns (bool)",
+  "function transferFrom(address from, address to, uint256 value) returns (bool)",
+]
+
+export const vldxAbi = [
+  ...erc20Abi,
+  "function tradingEnabled() view returns (bool)",
+  "function setTradingEnabled(bool enabled)",
+  "function mint(address to, uint256 amount)",
+  "function burn(address from, uint256 amount)",
+  "function MINTER_ROLE() view returns (bytes32)",
+  "function GOVERNANCE_ROLE() view returns (bytes32)",
+  "function grantRole(bytes32 role, address account)",
+  "function hasRole(bytes32 role, address account) view returns (bool)",
+]

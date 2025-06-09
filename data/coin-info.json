@@ -1,0 +1,77 @@
+{
+  "name": "Validium-X Coin",
+  "symbol": "VLDX",
+  "decimals": 18,
+  "totalSupply": "20000000000",
+  "maxSupply": "30000000000",
+  "description": "Validium-X Coin (VLDX) is an ERC-20 token with governance capabilities, designed for the Validium-X ecosystem on World Chain.",
+  "icon": "/images/vldx-icon-new.png",
+  "website": "https://validium-x.com",
+  "whitepaper": "https://validium-x.com/whitepaper",
+  "social": {
+    "twitter": "https://twitter.com/validiumx",
+    "telegram": "https://t.me/validiumx",
+    "discord": "https://discord.gg/validiumx",
+    "github": "https://github.com/validium-x"
+  },
+  "tokenomics": {
+    "ecosystemAndCommunity": {
+      "percentage": 25,
+      "amount": "5000000000",
+      "description": "Community incentives, airdrops, and ecosystem development"
+    },
+    "liquidityPool": {
+      "percentage": 40,
+      "amount": "8000000000",
+      "description": "DEX liquidity and market making"
+    },
+    "presale": {
+      "percentage": 10,
+      "amount": "2000000000",
+      "description": "Public presale with bonding curve mechanism"
+    },
+    "teamAndAdvisors": {
+      "percentage": 10,
+      "amount": "2000000000",
+      "description": "Team allocation with vesting schedule"
+    },
+    "strategicPartnerships": {
+      "percentage": 10,
+      "amount": "2000000000",
+      "description": "Strategic partnerships and collaborations"
+    },
+    "treasury": {
+      "percentage": 5,
+      "amount": "1000000000",
+      "description": "Treasury for future development and operations"
+    }
+  },
+  "presale": {
+    "basePrice": "0.001",
+    "finalPrice": "0.002",
+    "maxTokensForSale": "500000000",
+    "maxRaise": "750000",
+    "mechanism": "Linear bonding curve",
+    "acceptedTokens": ["WLD", "WETH"],
+    "network": "World Chain",
+    "chainId": 4801
+  },
+  "contracts": {
+    "vldxToken": "0x701aB55cb87FB8dA4fE3f45FFf6cc1eA60965310",
+    "presale": "0x625A522cB032eB832b3077E9b85a323D05b34a37",
+    "liquidity": "0x2308fc53ec7a8A818AaA116D0c0B34392529BAbe",
+    "swapper": "0x4eA231fc1BA3B5b4d0cc2a3a3FfB6f1E43468985",
+    "treasury": "0xD3E97f2dB4703D3972AC3F9E29762156B089604f",
+    "team": "0xE0E25EB1A1C5924615D1628bD8748105969480C5"
+  },
+  "features": [
+    "ERC-20 compliant",
+    "Governance capabilities (ERC-20Votes)",
+    "Minting and burning mechanisms",
+    "Role-based access control",
+    "Trading controls",
+    "Bonding curve presale",
+    "Uniswap V3 integration",
+    "Multi-token swapping"
+  ]
+}
